@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: coffeemart
+  namespace: coffeemart
+spec:
+  selector:
+    app: coffeemart
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: ClusterIP

@@ -1,0 +1,48 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f6f0e8;
+  color: #2e2217;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: #4b2e1e;
+  color: #fff8f0;
+}
+
+.catalog {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(75, 46, 30, 0.15);
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #865439;
+}
+
+button {
+  border: none;
+  background: #865439;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
