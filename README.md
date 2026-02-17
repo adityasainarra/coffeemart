@@ -39,3 +39,15 @@ kubectl apply -f k8s/ingress.yaml
 pip install pytest
 pytest
 ```
+
+## GitHub Actions deployment
+
+This repository includes `.github/workflows/deploy.yml` which will:
+- run tests (`pytest`)
+- build and push Docker image to GHCR
+- deploy to Kubernetes on pushes to `main`
+
+### Required GitHub secrets
+- `KUBE_CONFIG`: base64/plain kubeconfig content for the target cluster
+
+Make sure your cluster has an ingress controller (for the provided ingress manifest).
